@@ -60,7 +60,6 @@
 #
 # {'type': 'metrics', 'dataset': 'train', 'r2': 0.8, 'mse': 0.7, 'mad': 0.9}
 # {'type': 'metrics', 'dataset': 'test', 'r2': 0.7, 'mse': 0.6, 'mad': 0.8}
-#
 
 
 import os
@@ -80,7 +79,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import r2_score, mean_squared_error, median_absolute_error
 
 
-"Paso 1: cargar y preprocesar datos"
 def cargar_preprocesar_datos():
     train_dataset = pd.read_csv("files/input/train_data.csv.zip", index_col=False)
     test_dataset = pd.read_csv("files/input/test_data.csv.zip", index_col=False)
